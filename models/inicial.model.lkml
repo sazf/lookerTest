@@ -15,10 +15,11 @@ explore: hierro {}
 explore: cemento {}
 
 explore: prueba {
-  access_filter: {
-    field: ciudad
-    user_attribute: user_ciudad
-  }
+
+  #access_filter: {
+  #  field: ciudad
+  #  user_attribute: user_ciudad
+  #}
   # join: sap_interfaz_recaudo {
     # type: inner
     # sql_on: ${fact_facturacion.asignacion}=${sap_interfaz_recaudo.asignacion} ;;
