@@ -14,3 +14,16 @@ explore: hierro {}
 
 explore: cemento {}
 
+explore: prueba {
+  access_filter: {
+    field: ciudad
+    user_attribute: user_ciudad
+  }
+  # join: sap_interfaz_recaudo {
+    # type: inner
+    # sql_on: ${fact_facturacion.asignacion}=${sap_interfaz_recaudo.asignacion} ;;
+    # relationship: one_to_one
+    # sql_where: ${sap_interfaz_recaudo.textodocumento}!= "CARGO MATRICULA EXTRAORD" ;;
+  # }
+
+}
