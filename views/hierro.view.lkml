@@ -1,9 +1,16 @@
 view: hierro {
-  sql_table_name: `Materiales.hierro` ;;
+  sql_table_name: `hippo-387619.Materiales.hierro` ;;
 
   dimension: ciudad {
     type: string
     sql: ${TABLE}.CIUDAD ;;
+  }
+  dimension_group: fecha {
+    type: time
+    timeframes: [raw, date, week, month, quarter, year]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.fecha ;;
   }
   dimension: flete {
     type: number
