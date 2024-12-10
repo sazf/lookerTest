@@ -1,5 +1,5 @@
 view: cemento {
-  sql_table_name: `Materiales.cemento` ;;
+  sql_table_name: `hippo-387619.Materiales.cemento` ;;
 
   dimension: cantidad_minima {
     type: number
@@ -8,6 +8,13 @@ view: cemento {
   dimension: ciudad {
     type: string
     sql: ${TABLE}.CIUDAD ;;
+  }
+  dimension_group: fecha {
+    type: time
+    timeframes: [raw, date, week, month, quarter, year]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.fecha ;;
   }
   dimension: incluye_descargue {
     type: string
