@@ -38,6 +38,7 @@ view: cemento {
     sql: ${TABLE}.monto_unidad_descargue_ ;;
   }
   dimension: precio_costo {
+    label: "costo"
     type: number
     sql: ${TABLE}.PRECIO_COSTO ;;
   }
